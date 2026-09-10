@@ -165,7 +165,7 @@ function initHomePage() {
     activeTaskId = taskId;
     modalTitle.textContent = task.name;
     modalType.textContent = `CODE TYPE: ${task.type}`;
-    modalContent.textContent = task.content;
+    modalContent.innerHTML = task.content;
     codeInput.value = "";
     feedback.textContent = completedTasks.has(taskId) ? "TASK ALREADY COMPLETED" : "";
     feedback.className = completedTasks.has(taskId) ? "feedback success" : "feedback";
@@ -270,7 +270,7 @@ function initQrPage() {
     if (qrInput.value.trim() === pageData.code) {
       qrFeedback.textContent = "ACCESS GRANTED";
       qrFeedback.className = "feedback success";
-      qrMessage.textContent = pageData.message;
+      qrMessage.innerHTML = pageData.message;
 
       setTimeout(() => {
         qrGate.classList.add("hidden");
