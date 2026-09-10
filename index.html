@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPERATION: SHUTDOWN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">OPERATION: SHUTDOWN</div>
+      <div class="progress-wrap" aria-label="Mission progress">
+        <div class="progress-meta">
+          <span>PROGRESS</span>
+          <span id="progressText">0 / 6</span>
+        </div>
+        <div class="progress-track">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section id="taskGrid" class="task-grid" aria-label="Tasks"></section>
+    </main>
+  </div>
+
+  <div id="taskModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-panel">
+      <button id="closeModal" class="icon-button" type="button" aria-label="Close">×</button>
+
+      <div class="modal-heading">
+        <p id="modalType" class="task-type"></p>
+        <h2 id="modalTitle"></h2>
+      </div>
+
+      <div id="modalContent" class="task-content"></div>
+
+      <form id="codeForm" class="code-form">
+        <label for="codeInput">ENTER CODE</label>
+        <div class="code-row">
+          <input id="codeInput" type="text" autocomplete="off" spellcheck="false" />
+          <button type="submit" class="primary-button">SUBMIT</button>
+        </div>
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+      </form>
+
+      <button id="backButton" class="secondary-button" type="button">BACK TO MAIN</button>
+    </div>
+  </div>
+
+  <div id="finalScreen" class="final-screen hidden" role="dialog" aria-modal="true" aria-labelledby="finalTitle">
+    <div class="final-panel">
+      <p class="final-label">OPERATION COMPLETE</p>
+      <h2 id="finalTitle">FINAL CODE</h2>
+      <div id="finalCode" class="final-code">CHANGE_ME</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
