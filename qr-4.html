@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPERATION: SHUTDOWN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="qr-page" data-qr-page="4">
+    <div class="qr-shell">
+      <div class="brand qr-brand">OPERATION: SHUTDOWN</div>
+
+      <section id="qrGate" class="qr-panel">
+        <p class="qr-label">SECURE ACCESS</p>
+        <h1>ENTER CODE</h1>
+        <p class="qr-hint">NUMBERS ONLY</p>
+
+        <form id="qrCodeForm" class="code-form qr-code-form">
+          <div class="code-row qr-code-row">
+            <input id="qrCodeInput" type="text" inputmode="numeric" pattern="[0-9]*" autocomplete="off" aria-label="Numeric access code" />
+            <button type="submit" class="primary-button">UNLOCK</button>
+          </div>
+          <p id="qrFeedback" class="feedback" aria-live="polite"></p>
+        </form>
+
+        <a class="secondary-button qr-back" href="index.html">BACK TO MAIN</a>
+      </section>
+
+      <section id="qrMessagePanel" class="qr-panel qr-message-panel hidden">
+        <p class="qr-label success-label">ACCESS GRANTED</p>
+        <div id="qrMessage" class="qr-message"></div>
+        <a class="secondary-button qr-back" href="index.html">BACK TO MAIN</a>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
