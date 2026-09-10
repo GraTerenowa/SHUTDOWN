@@ -16,59 +16,59 @@ const TASKS = [
     name: "WIRETAP",
     answer: "las vegas",
     type: "Letters",
-    content: "Enter the task content here."
+    content: "Agent X, we planted a wiretap on one of the traitors to learn the location of their secret base. Unfortunately, it was damaged, and we were only able to recover 4 files. Listen to them and identify the location."
   },
   {
     id: 3,
     name: "FIND THE TRAITOR",
     answer: "1234",
     type: "Numbers",
-    content: "Enter the task content here."
+    content: "Agent X, we have detected a traitor among our agents.<br><br>This person has been working with us for 30 years, so no one expected such a betrayal.<br><br>You will recognize the traitor by their black glasses — but you will never see them wearing a tie.<br><br>Identify the agent and find their special code."
   },
   {
     id: 4,
     name: "HIDDEN CODE",
     answer: "1234",
     type: "Numbers",
-    content: "Enter the task content here."
+    content: "Agent X, we found a board with a hidden code. Arrange the digits from smallest to largest."
   },
   {
     id: 5,
     name: "QR TRAIL",
-    answer: "1234",
+    answer: "916",
     type: "Numbers",
-    content: "Enter the task content here."
+    content: "Agent X, rogue agents have left behind a series of encrypted clues. Scan the QR code and follow their trail."
   },
   {
     id: 6,
     name: "LIGHT SIGNAL",
     answer: "98",
     type: "Numbers",
-    content: "Enter the task content here."
+    content: "Agent X, receive a light signal from one of our trusted agents. Decode it to continue Operation: Shutdown."
   }
 ];
 
 // Change the final code here.
-const FINAL_CODE = "CHANGE_ME";
+const FINAL_CODE = "1109";
 
 // QR SUBPAGES
 // Each page has its own numeric access code and message.
 const QR_PAGES = {
   1: {
     code: "1111",
-    message: "Enter the message for QR page 1 here."
+    message: "When the night starts, some words steal the show, <br><br>Find the message that says the party should go on.<br><br>Next code:091"
   },
   2: {
-    code: "2222",
-    message: "Enter the message for QR page 2 here."
+    code: "091",
+    message: "You don’t have to sing well to steal the show. <br><br>Find the place where every voice gets a go. <br><br>Next code:872"
   },
   3: {
-    code: "3333",
-    message: "Enter the message for QR page 3 here."
+    code: "872",
+    message: "Green is the field, but no grass grows here.<br><br>Find the place where colored balls disappear. <br><br>Don’t stop at the first one you meet,<br><br>look for the number of the day that starts the week. <br><br>Next code:518"
   },
   4: {
-    code: "4444",
-    message: "Enter the message for QR page 4 here."
+    code: "518",
+    message: "Code: 916"
   }
 };
 
