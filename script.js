@@ -64,7 +64,7 @@ const QR_PAGES = {
   },
   3: {
     code: "872",
-    message: "Green is the field, but no grass grows here.<br><br>Find the place where colored balls disappear. <br><br>Don’t stop at the first one you meet,<br><br>look for the number of the day that starts the week. <br><br>Next code:518"
+    message: "Green is the field, but no grass grows here.<br><br>Find the place where colored balls disappear. <br><br>Don’t stop at the first one you meet,<br><br>look for the number of the day that ends the week. <br><br>Next code:518"
   },
   4: {
     code: "518",
