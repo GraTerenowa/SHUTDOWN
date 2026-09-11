@@ -7,7 +7,7 @@ const TASKS = [
   {
     id: 1,
     name: "THREE BOXES",
-    answer: "483",
+    answer: "874",
     type: "Numbers",
     content: "Enter the task content here."
   },
@@ -21,14 +21,14 @@ const TASKS = [
   {
     id: 3,
     name: "FIND THE TRAITOR",
-    answer: "1234",
+    answer: "8536",
     type: "Numbers",
     content: "Agent X, we have detected a traitor among our agents.<br><br>This person has been working with us for 30 years, so no one expected such a betrayal.<br><br>You will recognize the traitor by their black glasses — but you will never see them wearing a tie.<br><br>Identify the agent and find their special code."
   },
   {
     id: 4,
     name: "HIDDEN CODE",
-    answer: "1234",
+    answer: "4872",
     type: "Numbers",
     content: "Agent X, we found a board with a hidden code. Arrange the digits from smallest to largest."
   },
