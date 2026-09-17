@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPERATION: SHUTDOWN</title>
+
+  <!-- Uses the same CSS as your main page -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .intro-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(3, 3, 12, 0.88);
+      backdrop-filter: blur(8px);
+    }
+
+    .intro-box {
+      width: min(680px, 100%);
+      padding: 32px;
+      border: 1px solid rgba(139, 92, 246, 0.65);
+      background: linear-gradient(180deg, rgba(20, 16, 38, 0.97), rgba(8, 8, 18, 0.98));
+      box-shadow: 0 0 30px rgba(139, 92, 246, 0.16), inset 0 0 30px rgba(56, 189, 248, 0.04);
+      text-align: center;
+    }
+
+    .intro-label {
+      margin: 0 0 14px;
+      font-size: 0.8rem;
+      letter-spacing: 0.28em;
+      color: #67e8f9;
+      text-transform: uppercase;
+    }
+
+    .intro-title {
+      margin: 0 0 22px;
+      font-size: clamp(1.5rem, 5vw, 2.3rem);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .intro-message {
+      margin: 0 auto 28px;
+      max-width: 560px;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    .intro-button {
+      width: 100%;
+      padding: 16px 20px;
+      border: 1px solid rgba(139, 92, 246, 0.7);
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .intro-button:hover {
+      background: rgba(139, 92, 246, 0.12);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="intro-overlay" id="introOverlay">
+    <div class="intro-box">
+      <p class="intro-label">MISSION BRIEFING</p>
+      <h1 class="intro-title">OPERATION: SHUTDOWN</h1>
+
+      <div class="intro-message">
+        <!-- EDIT YOUR START MESSAGE HERE -->
+        Put your opening message here.
+      </div>
+
+      <button class="intro-button" id="continueButton" type="button">
+        CONTINUE
+      </button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("continueButton").addEventListener("click", function () {
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
