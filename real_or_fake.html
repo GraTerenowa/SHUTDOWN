@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPERATION: SHUTDOWN</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at top, rgba(111, 66, 193, 0.18), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(0, 170, 255, 0.10), transparent 30%),
+        #05050b;
+      color: #f5f3ff;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow: hidden;
+    }
+
+    .fake-page {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .fake-page::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 34px 34px;
+      pointer-events: none;
+    }
+
+    .fake-link {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: min(950px, 100%);
+      padding: 60px 32px;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid rgba(139, 92, 246, 0.65);
+      background: linear-gradient(180deg, rgba(18, 14, 34, 0.96), rgba(7, 7, 15, 0.98));
+      box-shadow:
+        0 0 45px rgba(139, 92, 246, 0.18),
+        inset 0 0 45px rgba(56, 189, 248, 0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .fake-link:hover,
+    .fake-link:focus-visible {
+      transform: translateY(-3px) scale(1.01);
+      border-color: rgba(99, 230, 255, 0.9);
+      box-shadow:
+        0 0 55px rgba(139, 92, 246, 0.28),
+        0 0 30px rgba(56, 189, 248, 0.12);
+      outline: none;
+    }
+
+    .fake-text {
+      margin: 0;
+      font-size: clamp(2.3rem, 8vw, 6.5rem);
+      line-height: 1;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-shadow:
+        0 0 10px rgba(139, 92, 246, 0.5),
+        0 0 28px rgba(56, 189, 248, 0.18);
+    }
+
+    .tap-hint {
+      margin-top: 24px;
+      font-size: 0.8rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      opacity: 0.55;
+    }
+
+    @media (max-width: 600px) {
+      .fake-link {
+        padding: 44px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="fake-page">
+
+    <!-- PODMIEŃ LINK PONIŻEJ NA SWÓJ LINK DO YOUTUBE -->
+    <a
+      class="fake-link"
+      href="https://www.youtube.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <h1 class="fake-text">IS IT REAL OR IS IT FAKE?</h1>
+      <div class="tap-hint">TAP TO OPEN</div>
+    </a>
+
+  </main>
+</body>
+</html>
