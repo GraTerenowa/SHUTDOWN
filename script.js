@@ -23,7 +23,7 @@ const TASKS = [
     name: "FIND THE TRAITOR",
     answer: "8536",
     type: "Numbers",
-    content: "Agent X, we have detected a traitor among our agents.<br><br>This person has been working with us for 30 years, so no one expected such a betrayal.<br><br>You will recognize the traitor by their black glasses — but you will never see them wearing a tie.<br><br>Identify the agent and find their special code."
+    content: "Agent X, we have detected a traitor among our agents.<br><br>This person has been working with us for 30 years, so no one expected such a betrayal.<br><br>You will recognize the traitor by their black glasses — but you will never see them wearing a tie.<br><br>Look at the agent cards, identify the traitor and find their special code."
   },
   {
     id: 4,
