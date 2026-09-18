@@ -16,7 +16,7 @@ const TASKS = [
     name: "WIRETAP",
     answer: "63",
     type: "Numbers",
-    content: "Agent X, we planted a wiretap on one of the traitors to learn the location of their secret base. Unfortunately, it was damaged, and we were only able to recover 4 files. <br><br>Listen to them and identify one the location, that fits to all files."
+    content: "Agent X, we planted a wiretap on one of the traitors to learn the location of their secret base. Unfortunately, it was damaged, and we were only able to recover 4 files. <br><br>Listen to them and identify one location, that fits to all files."
   },
   {
     id: 3,
