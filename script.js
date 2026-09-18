@@ -9,7 +9,7 @@ const TASKS = [
     name: "THREE BOXES",
     answer: "874",
     type: "Numbers",
-    content: "Enter the task content here."
+    content: "Agent X, use the magnetic force to see small balls and numbers on them."
   },
   {
     id: 2,
