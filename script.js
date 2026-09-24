@@ -49,7 +49,7 @@ const TASKS = [
 ];
 
 // Change the final code here.
-const FINAL_CODE = "1809#";
+const FINAL_CODE = "CONGRATULATIONS!";
 
 // QR SUBPAGES
 // Each page has its own numeric access code and message.
